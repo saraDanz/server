@@ -2,9 +2,7 @@ const express = require("express");
 const course = require("./routes/course");
 const teacher = require("./routes/teacher");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/school")//התחברות למסד נתונים אם לא קיים ייוצר מחדש
-    .then(() => { console.log("connected to mongo") })//נדפיס הודעה כשיסיים להתחבר
-    .catch(eer => console.error(eer));//ידפיס שגיאה כשתתרחש שגיאה בהתחרבות
+
 
 const app = express();//מפעיל פונקציה שיוצרת ומחזירה את השרת שיוצרת
 //עכשיו באפפ יהיה לנו את השרת 
