@@ -16,8 +16,9 @@ app.use(express.urlencoded({ extended: false }));
 // app.get("/course", (req, res) => { })
 // app.post("/user", (req, res) => { })
 
-app.use("/teacher", teacher)
-app.use("/course", course)
+//app.use("/teacher", teacher)
+//app.use("/course", course)
+app.get("/course", (req,res)=>{res.json([{id:1,price:250},{id:2,price:300}])})
 app.listen(3000, () => {
     console.log("listening on port 3000")
 })
