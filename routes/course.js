@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const router = express.Router();
 const mongoose = require("mongoose");
 const Course = require("../models/course");
@@ -75,6 +75,6 @@ router.delete("/:id", async (req, res) => {
 
 module.exports = router;
 
-
+*/
 // לא צריך לציין id
 //כי אוטומטי לכל אובייקט מתווסף השדה הזה
