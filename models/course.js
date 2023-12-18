@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+/*const mongoose = require("mongoose");
 const courseSchema = new mongoose.Schema({
     name: {
         type: mongoose.SchemaTypes.String,
@@ -16,4 +16,4 @@ const courseSchema = new mongoose.Schema({
 
 });
 const Course = mongoose.model("Courses", courseSchema);//כביכול מחלקה שמגידרה מה הסוג של הנתונים בטבלת קורסים
-module.exports = Course;
+module.exports = Course;*/
