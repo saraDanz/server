@@ -1,7 +1,5 @@
 const express = require("express");
-const course = require("./routes/course");
-const teacher = require("./routes/teacher");
-const mongoose = require("mongoose");
+
 
 
 const app = express();//מפעיל פונקציה שיוצרת ומחזירה את השרת שיוצרת
@@ -19,8 +17,9 @@ app.use(express.urlencoded({ extended: false }));
 //app.use("/teacher", teacher)
 //app.use("/course", course)
 app.get("/course", (req,res)=>{res.json([{id:1,price:250},{id:2,price:300}])})
-app.listen(3000, () => {
-    console.log("listening on port 3000")
+let port=process.env.PORT;
+app.listen(port, () => {
+    console.log("listening on port "+port)
 })
 
 
