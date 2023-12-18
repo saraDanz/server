@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const router = express.Router();
 
 const teachers = [
@@ -40,4 +40,4 @@ router.delete("/:id", (req, res) => {
     return res.send(t).status(200);
 })
 
-module.exports = router;
+module.exports = router;*/
